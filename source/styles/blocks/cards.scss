@@ -29,4 +29,21 @@
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
+  //background-image: url("../../icons/arrow-long.svg");
+}
+
+.cards__icon {
+  background-repeat: no-repeat;
+}
+
+.cards__icon-cat-slim {
+  width: 50px;
+  height: 53px;
+  background-image: url("../../icons/cat-slim.svg");
+}
+
+.cards__icon-cat-massive {
+  width: 67px;
+  height: 50px;
+  background-image: url("../../icons/cat-massive.svg");
 }
