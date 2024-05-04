@@ -1,0 +1,21 @@
+.parameters {
+  color: $special-dark-grey;
+}
+
+.parameters__list {
+  list-style-type: none;
+}
+
+.parameters__key {
+  font-family: $Lato;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.parameters__value {
+  font-family: $Lato;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}

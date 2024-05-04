@@ -1,0 +1,23 @@
+.hero {
+  background-color: #68b738;
+  font-family: $Oswald;
+  color: #ffffff;
+}
+
+.hero__wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+.hero__title {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.hero__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+}

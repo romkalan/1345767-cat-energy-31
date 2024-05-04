@@ -1,0 +1,18 @@
+.example {
+  color: #000000;
+}
+
+.example__title {
+  font-family: $Oswald;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.example__text {
+  font-family: $Lato;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $special-dark-grey;
+}

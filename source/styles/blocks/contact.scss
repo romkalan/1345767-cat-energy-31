@@ -1,0 +1,24 @@
+.contact {
+  color: #000000;
+}
+
+.contact__info {
+  display: flex;
+}
+
+.contact__title {
+  font-family: $Oswald;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.contact__address {
+  font-family: $Lato;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $special-dark-grey;
+}

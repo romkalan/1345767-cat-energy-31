@@ -1,0 +1,32 @@
+.cards__list {
+  list-style-type: none;
+}
+
+.cards__item {
+  display: flex;
+}
+
+.cards__title {
+  font-family: $Oswald;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.cards__text {
+  font-family: $Lato;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $special-dark-grey;
+}
+
+.cards__link {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+}

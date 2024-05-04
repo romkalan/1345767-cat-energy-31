@@ -1,0 +1,20 @@
+.price {
+  display: flex;
+  color: #000000;
+}
+
+.price__text {
+  font-family: $Oswald;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.price__numbers {
+  font-family: $Oswald;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}

@@ -1,0 +1,32 @@
+.how-it-works {
+  color: #000000;
+}
+
+.how-it-works__wrapper {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.how-it-works__title {
+  font-family: $Oswald;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.how-it-works__list {
+  list-style-type: none;
+}
+
+.how-it-works__item {
+  color: $special-dark-grey;
+}
+
+.how-it-works__text {
+  font-family: $Lato;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $special-dark-grey;
+}

@@ -1,0 +1,18 @@
+.statistic {
+  color: #000000;
+}
+
+.statistic__title {
+  font-family: $Oswald;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.statistic__text {
+  font-family: $Lato;
+  font-size: 12px;
+  line-height: 100%;
+  font-weight: 400;
+  color: $special-dark-grey;
+}
