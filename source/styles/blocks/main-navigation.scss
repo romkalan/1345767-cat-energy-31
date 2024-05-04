@@ -1,3 +1,14 @@
 .main-navigation {
   color: #000000;
 }
+
+.main-navigation__toggle {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: $basic-green;
+}
+
+.main-navigation__toggle:hover {
+  cursor: pointer;
+}
