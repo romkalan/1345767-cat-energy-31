@@ -32,14 +32,14 @@
   position: relative;
 }
 
-.cards__link:after {
+.cards__link::after {
   content: "";
   width: 32px;
   height: 10px;
   background-size: cover;
   position: absolute;
   background-position: center;
-  background-image: url(../../icons/stack.svg#arrow-long);
+  background-image: url("../../icons/stack.svg#arrow-long");
 }
 
 .cards__icon {
