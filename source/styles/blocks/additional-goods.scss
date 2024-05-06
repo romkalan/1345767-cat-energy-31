@@ -39,7 +39,29 @@
 }
 
 .additional-goods__order-all-wrapper {
+  background-repeat: no-repeat;
+  background-image: url("../../images/cat-in-box-mobile@2x.webp");
+  background-size: cover;
+  position: relative;
+  width: 280px;
+  height: 290px;
+  display: flex;
+  text-align: center;
+}
+
+.additional-goods__order-all-text {
+  color: #ffffff;
   background-color: $basic-green;
+  opacity: 85%;
+  margin: 0;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 78px;
+    height: 80px;
+    background-image: url("../../icons/stack.svg#gift-icon");
+  }
 }
 
 .additional-goods__order-all {
