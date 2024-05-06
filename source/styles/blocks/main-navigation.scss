@@ -5,8 +5,13 @@
 .main-navigation__toggle {
   width: 24px;
   height: 24px;
-  border: none;
-  background-color: $basic-green;
+  mask-repeat: no-repeat;
+  mask-image: url("../../icons/stack.svg#burger-icon");
+  background-color: #000000;
+
+  &:active {
+    mask-image: url("../../icons/stack.svg#close-icon");
+  }
 }
 
 .main-navigation__toggle:hover {

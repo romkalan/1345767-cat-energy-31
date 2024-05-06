@@ -6,3 +6,27 @@
   list-style-type: none;
   display: flex;
 }
+
+.socials__icon {
+  width: 28px;
+  height: 22px;
+  display: block;
+  background-color: $special_grey-2;
+
+  &:active,
+  &:hover {
+    background-color: $basic-green;
+  }
+}
+
+.socials__icon--vkontakte {
+  mask-image: url("../../icons/stack.svg#vkontakte");
+}
+
+.socials__icon--youtube {
+  mask-image: url("../../icons/stack.svg#youtube");
+}
+
+.socials__icon--telegram {
+  mask-image: url("../../icons/stack.svg#telegram");
+}

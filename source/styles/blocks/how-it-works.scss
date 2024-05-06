@@ -32,6 +32,42 @@
 }
 
 .how-it-works__icon {
+  width: 28px;
+  height: 28px;
   padding: 15px;
   background-color: $basic-green;
+
+  &::after {
+    content: "";
+    width: 25px;
+    height: 28px;
+    position: absolute;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    background-color: #ffffff;
+  }
+}
+
+.how-it-works__icon-leaf {
+  &::after {
+    mask-image: url("../../icons/stack.svg#leaf");
+  }
+}
+
+.how-it-works__icon-reaction {
+  &::after {
+    mask-image: url("../../icons/stack.svg#reaction");
+  }
+}
+
+.how-it-works__icon-eat {
+  &::after {
+    mask-image: url("../../icons/stack.svg#eat");
+  }
+}
+
+.how-it-works__icon-time {
+  &::after {
+    mask-image: url("../../icons/stack.svg#time");
+  }
 }
