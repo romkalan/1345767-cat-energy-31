@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cat energy - каталог продукции</title>
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicons/favicon-32x32.png">
@@ -11,26 +11,28 @@
 </head>
 <body class="page__body">
 <header class="main-header">
+  <div class="logo">
+    <a class="logo__link" href="index.html">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" type="image/svg+xml" width="70"
+                height="59">
+        <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" type="image/svg+xml" width="60"
+                height="50">
+        <img class="logo__image" width="33" height="38" src="images/logo-mobile.svg" alt="cat energy">
+      </picture>
+      <img class="logo__text" width="101" height="18" src="images/cat-energy-text-logo.svg" alt="cat energy text">
+    </a>
+  </div>
+  <button class="main-header__toggle" type="button">
+    <span class="visually-hidden">Открыть меню</span>
+  </button>
   <nav class="main-navigation">
-    <div class="main-navigation__logo-wrapper">
-      <a class="logo" href="index.html">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" type="image/svg+xml" width="70"
-                  height="59">
-          <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" type="image/svg+xml" width="60"
-                  height="50">
-          <img class="logo__image" width="33" height="38" src="images/logo-mobile.svg" alt="cat energy">
-        </picture>
-        <img class="logo__text" width="101" height="18" src="images/cat-energy-text-logo.svg" alt="cat energy text">
-      </a>
-      <button class="main-navigation__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+    <div class="main-navigation__wrapper">
       <ul class="main-navigation__list site-list">
-        <li class="site-list__item site-list__item-active">
+        <li class="site-list__item">
           <a href="index.html">Главная</a>
         </li>
-        <li class="site-list__item">
+        <li class="site-list__item site-list__item-active">
           <a href="#">Каталог продукции</a>
         </li>
         <li class="site-list__item">
