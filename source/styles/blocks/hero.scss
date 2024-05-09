@@ -1,12 +1,17 @@
 .hero {
-  background-color: #68b738;
   font-family: $Oswald;
   color: #ffffff;
+  background-image: url("../../images/background-cat-mobile@2x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 20px;
 }
 
 .hero__wrapper {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .hero__title {
@@ -20,4 +25,31 @@
   font-weight: 400;
   line-height: 14px;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .hero {
+    background-image: none;
+    margin-bottom: 0;
+  }
+
+  .hero__title {
+    color: #ffffff;
+  }
+
+  .hero__text {
+    color: #ffffff;
+  }
+
+  .hero__button {
+    position: absolute;
+    top: 295px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero {
+    background-image: url("../../images/background-cat-mobile@2x.jpg");
+    margin-bottom: 82px;
+  }
 }

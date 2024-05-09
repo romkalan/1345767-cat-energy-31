@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cat energy - главная страница</title>
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicons/favicon-32x32.png">
@@ -11,21 +11,23 @@
 </head>
 <body class="page__body">
 <header class="main-header">
+  <div class="logo">
+    <a class="logo__link" href="index.html">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" type="image/svg+xml" width="70"
+                height="59">
+        <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" type="image/svg+xml" width="60"
+                height="50">
+        <img class="logo__image" width="33" height="38" src="images/logo-mobile.svg" alt="cat energy">
+      </picture>
+      <img class="logo__text" width="101" height="18" src="images/cat-energy-text-logo.svg" alt="cat energy text">
+    </a>
+  </div>
+  <button class="main-header__toggle" type="button">
+    <span class="visually-hidden">Открыть меню</span>
+  </button>
   <nav class="main-navigation">
-    <div class="main-navigation__logo-wrapper">
-      <a class="logo" href="index.html">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" type="image/svg+xml" width="70"
-                  height="59">
-          <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" type="image/svg+xml" width="60"
-                  height="50">
-          <img class="logo__image" width="33" height="38" src="images/logo-mobile.svg" alt="cat energy">
-        </picture>
-        <img class="logo__text" width="101" height="18" src="images/cat-energy-text-logo.svg" alt="cat energy text">
-      </a>
-      <button class="main-navigation__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+    <div class="main-navigation__wrapper">
       <ul class="main-navigation__list site-list">
         <li class="site-list__item site-list__item-active">
           <a href="#">Главная</a>
@@ -46,12 +48,14 @@
     <div class="hero__wrapper">
       <h2 class="hero__title">Функциональное питание для котов</h2>
       <p class="hero__text">Занялся собой? Займись котом!</p>
-      <button class="hero__button button" type="button">Подобрать программу</button>
       <picture>
-        <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/can-desktop@1x.png 1x, images/can-desktop@2x.png 2x">
-        <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/can-tablet-desktop@1x.png 1x, images/can-tablet-desktop@2x.png 2x">
+        <source width="552" height="499" type="image/png" media="(min-width: 1440px)"
+                srcset="images/can-desktop@1x.png 1x, images/can-desktop@2x.png 2x">
+        <source width="709" height="609" type="image/png" media="(min-width: 768px)"
+                srcset="images/can-tablet-desktop@1x.png 1x, images/can-tablet-desktop@2x.png 2x">
         <img class="hero__image" src="images/can-mobile@1x.png" srcset="images/can-mobile@2x.png 2x" width="280" height="270" alt="Пример банки корма Cat Energy">
       </picture>
+      <button class="hero__button button" type="button">Подобрать программу</button>
     </div>
   </section>
 
@@ -61,10 +65,12 @@
       <ul class="cards__list">
         <li class="cards__item">
           <div class="cards__description">
-            <p class="cards__icon cards__icon-cat-slim">
-              <span class="visually-hidden">Худой кот</span>
-            </p>
-            <h3 class="cards__title">Похудение</h3>
+            <div class="cards__name">
+              <p class="cards__icon cards__icon-cat-slim">
+                <span class="visually-hidden">Худой кот</span>
+              </p>
+              <h3 class="cards__title">Похудение</h3>
+            </div>
             <p class="cards__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на
               диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a class="cards__link" href="#">
@@ -74,10 +80,12 @@
         </li>
         <li class="cards__item">
           <div class="cards__description">
-            <p class="cards__icon cards__icon-cat-massive">
-              <span class="visually-hidden">Массивный кот</span>
-            </p>
-            <h3 class="cards__title">Набор массы</h3>
+            <div class="cards__name">
+              <p class="cards__icon cards__icon-cat-massive">
+                <span class="visually-hidden">Массивный кот</span>
+              </p>
+              <h3 class="cards__title">Набор массы</h3>
+            </div>
             <p class="cards__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет
               вашему коту нарастить необходимые мышцы!</p>
             <a class="cards__link" href="#">
@@ -135,14 +143,17 @@
     </div>
     <div class="example__slider slider">
       <picture>
-        <source media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x" type="image/png" width="560" height="512">
+        <source media="(min-width: 768px)"
+                srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x" type="image/png"
+                width="560" height="512">
         <img class="slider__image" src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png" width="280" height="256" alt="Толстый кот">
       </picture>
       <button class="slider__changer" type="button">
         <span class="visually-hidden">Слайдер для отображения изменений массы кота</span>
       </button>
       <picture>
-        <source media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x" type="image/png" width="560" height="512">
+        <source media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x"
+                type="image/png" width="560" height="512">
         <img class="slider__image" src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Худой кот">
       </picture>
     </div>

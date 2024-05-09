@@ -1,5 +1,24 @@
+.cards {
+  margin: 0 auto;
+}
+
 .cards__list {
+  margin: 0 auto;
+  padding: 0;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cards__description {
+  background-color: $basic-gray;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards__name {
+  display: flex;
 }
 
 .cards__item {
@@ -46,8 +65,6 @@
 
 .cards__icon {
   background-repeat: no-repeat;
-  width: 50px;
-  height: 53px;
 }
 
 .cards__icon-cat-slim {
@@ -60,4 +77,68 @@
   width: 67px;
   height: 50px;
   background-image: url("../../icons/stack.svg#cat-massive");
+}
+
+@media (min-width: $tablet-width) {
+  .cards__list {
+    gap: 30px;
+  }
+
+  .cards__description {
+    position: relative;
+    width: 708px;
+  }
+
+  .cards__name {
+    display: flex;
+  }
+
+  .cards__icon {
+    position: absolute;
+    right: 0;
+  }
+
+  .cards__icon-cat-slim {
+    width: 200px;
+    height: 211px;
+  }
+
+  .cards__icon-cat-massive {
+    width: 268px;
+    height: 200px;
+  }
+
+  .cards__text {
+    width: 340px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cards__list {
+    flex-direction: row;
+    gap: 80px;
+  }
+
+  .cards__description {
+    margin: 0;
+    width: 570px;
+  }
+
+  .cards__icon {
+    position: static;
+  }
+
+  .cards__icon-cat-slim {
+    width: 100px;
+    height: 106px;
+  }
+
+  .cards__icon-cat-massive {
+    width: 134px;
+    height: 100px;
+  }
+
+  .cards__text {
+    width: 457px;
+  }
 }

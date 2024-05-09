@@ -2,9 +2,19 @@
   color: #000000;
 }
 
+.logo__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .logo__info {
   color: #111111;
   text-decoration: none;
+}
+
+.logo__image {
+  margin-right: 75px;
 }
 
 .logo__text {
@@ -13,4 +23,10 @@
   line-height: 24px;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .logo__image {
+    margin-right: 13px;
+  }
 }

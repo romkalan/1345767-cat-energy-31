@@ -1,4 +1,43 @@
 .main-header {
   font-family: $Oswald;
   color: #000000;
+  width: 320px;
+  margin: 0 auto;
+  padding: 13px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header__toggle {
+  width: 24px;
+  height: 24px;
+  mask-repeat: no-repeat;
+  mask-image: url("../../icons/stack.svg#burger-icon");
+  background-color: #000000;
+
+  &:active {
+    mask-image: url("../../icons/stack.svg#close-icon");
+  }
+}
+
+.main-header__toggle:hover {
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    width: $tablet-width;
+  }
+
+  .main-header__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    width: $desktop-width;
+  }
 }
