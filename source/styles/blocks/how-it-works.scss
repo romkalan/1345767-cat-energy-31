@@ -1,5 +1,8 @@
 .how-it-works {
+  margin: 0 auto;
+  padding: 0;
   color: #000000;
+  width: 280px;
 }
 
 .how-it-works__wrapper {
@@ -13,14 +16,24 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
+  margin-bottom: 40px;
 }
 
 .how-it-works__list {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .how-it-works__item {
   color: $special-dark-grey;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  vertical-align: center;
 }
 
 .how-it-works__text {
@@ -32,9 +45,9 @@
 }
 
 .how-it-works__icon {
-  width: 28px;
-  height: 28px;
-  padding: 15px;
+  margin: 0;
+  width: 60px;
+  height: 60px;
   background-color: $basic-green;
 
   &::after {
@@ -69,5 +82,51 @@
 .how-it-works__icon-time {
   &::after {
     mask-image: url("../../icons/stack.svg#time");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .how-it-works {
+    width: 708px;
+  }
+
+  .how-it-works__item {
+    align-items: normal;
+    gap: 31px;
+    width: 230px;
+    flex-direction: column;
+  }
+
+  .how-it-works__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 72px;
+  }
+
+  .how-it-works__list {
+    flex-flow: row wrap;
+    gap: 37px 153px;
+  }
+
+  .how-it-works__icon {
+    width: 80px;
+    height: 80px;
+
+    &::after {
+      width: 30px;
+      height: 32px;
+      background-position: center;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .how-it-works {
+    width: $desktop-width;
+  }
+
+  .how-it-works__list {
+    flex-flow: row wrap;
+    gap: 37px 78px;
   }
 }

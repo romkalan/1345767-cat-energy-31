@@ -12,6 +12,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-navigation {
+    margin: 0;
+  }
+
   .main-navigation__list {
     display: flex;
     flex-direction: row;

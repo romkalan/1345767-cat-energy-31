@@ -1,9 +1,18 @@
 .contact {
+  margin: 0;
+  padding: 0;
   color: #000000;
 }
 
+.contact__wrapper {
+  position: relative;
+}
+
 .contact__info {
+  width: 280px;
+  margin: 0 auto;
   display: flex;
+  justify-content: space-between;
 }
 
 .contact__title {
@@ -21,4 +30,32 @@
   line-height: 20px;
   font-weight: 400;
   color: $special-dark-grey;
+}
+
+.contact__map {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .contact__info {
+    margin: 70px;
+    width: 628px;
+  }
+
+  .contact__title {
+    width: 163px;
+  }
+
+  .contact__address {
+    width: 157px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contact__info {
+    position: absolute;
+    margin: 60px 80px;
+    width: 565px;
+    background-color: #ffffff;
+  }
 }

@@ -1,5 +1,11 @@
 .example {
+  background-color: #eaeaea;
   color: #000000;
+}
+
+.example__wrapper {
+  margin: 0 auto;
+  width: 280px;
 }
 
 .example__title {
@@ -15,4 +21,32 @@
   line-height: 18px;
   font-weight: 400;
   color: $special-dark-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    background: none;
+  }
+
+  .example__wrapper {
+    margin: 0 auto;
+    width: 708px;
+  }
+
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .example__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__wrapper {
+    margin: 0 auto;
+    width: 1220px;
+  }
 }
