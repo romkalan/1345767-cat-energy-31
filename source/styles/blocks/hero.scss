@@ -1,15 +1,15 @@
 .hero {
+  margin: 0 auto;
   font-family: $Oswald;
   color: #ffffff;
-  background-image: url("../../images/background-cat-mobile@2x.jpg");
+  background-image: url("../../images/cat-background-green-mobile@2x.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 20px;
+  background-size: contain;
 }
 
 .hero__wrapper {
-  margin: 0;
   padding: 0;
+  width: 280px;
   display: flex;
   flex-direction: column;
 }
@@ -18,6 +18,7 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
+  text-align: center;
 }
 
 .hero__text {
@@ -25,31 +26,63 @@
   font-weight: 400;
   line-height: 14px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .hero {
-    background-image: none;
-    margin-bottom: 0;
+    color: #000000;
+    background: none;
+    margin-bottom: 620px;
+  }
+
+  .hero__wrapper {
+    position: relative;
+    background: none;
+    width: 708px;
+  }
+
+  .hero__info {
+    width: 420px;
   }
 
   .hero__title {
-    color: #ffffff;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
   }
 
   .hero__text {
-    color: #ffffff;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  .hero__image {
+    position: absolute;
+    top: 121px;
+    left: -40px;
   }
 
   .hero__button {
+    width: 245px;
     position: absolute;
-    top: 295px;
+    top: 280px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .hero {
-    background-image: url("../../images/background-cat-mobile@2x.jpg");
-    margin-bottom: 82px;
+    margin-bottom: 266px;
+  }
+
+  .hero__wrapper {
+    width: 1220px;
+  }
+
+  .hero__image {
+    position: absolute;
+    top: 0;
+    left: 200px;
   }
 }

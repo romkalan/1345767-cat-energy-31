@@ -1,5 +1,7 @@
 .statistic {
   color: #000000;
+  display: flex;
+  gap: 32px;
 }
 
 .statistic__title {
@@ -15,4 +17,10 @@
   line-height: 100%;
   font-weight: 400;
   color: $special-dark-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .statistic {
+    gap: 42px;
+  }
 }

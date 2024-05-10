@@ -1,17 +1,21 @@
 .main-container {
   margin: 0 auto;
   color: #000000;
-  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 @media (min-width: $tablet-width) {
   .main-container {
-    width: $tablet-width;
+    //width: $tablet-width;
+    gap: 45px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-container {
-    width: $desktop-width;
+    //width: $desktop-width;
+    gap: 70px;
   }
 }
