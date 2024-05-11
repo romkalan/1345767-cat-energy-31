@@ -1,12 +1,24 @@
 .parameters {
+  margin: 0 auto;
   color: $special-dark-grey;
+  margin-bottom: 21px;
 }
 
 .parameters__list {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 
+.parameters__item {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
 .parameters__key {
+  margin: 0;
   font-family: $Lato;
   font-size: 12px;
   line-height: 16px;
@@ -14,8 +26,35 @@
 }
 
 .parameters__value {
+  margin: 0;
   font-family: $Lato;
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
+}
+
+@media (min-width: $tablet-width) {
+  .parameters__wrapper {
+    width: 250px;
+  }
+
+  .parameters__item {
+    border-bottom: 1px solid $special_grey;
+  }
+
+  .parameters__key {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .parameters__value {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .parameters__wrapper {
+    width: 169px;
+  }
 }
