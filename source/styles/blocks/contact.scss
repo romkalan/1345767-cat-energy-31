@@ -38,19 +38,27 @@
   width: 100%;
 }
 
+.contact__logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
 @media (min-width: $tablet-width) {
   .contact__info {
-    margin: 70px;
-    width: 628px;
+    padding: 60px 70px;
+    width: $tablet-width;
   }
 
   .contact__title {
+    margin: 0;
     font-size: 20px;
     line-height: 26px;
     width: 163px;
   }
 
   .contact__address {
+    margin: 0;
     width: 157px;
     font-size: 16px;
     line-height: 20px;
@@ -60,7 +68,7 @@
 @media (min-width: $desktop-width) {
   .contact__info {
     position: absolute;
-    margin: 60px 80px;
+    margin: 95px 110px;
     padding: 60px 80px;
     width: 565px;
     background-color: #ffffff;
