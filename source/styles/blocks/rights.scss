@@ -1,6 +1,11 @@
 .rights {
+  margin: 0;
+  padding: 0;
   color: #000000;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 280px;
 }
 
 .rights__link {
@@ -9,17 +14,19 @@
 }
 
 .rights__text {
+  margin: 0;
   font-family: $Lato;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   color: $special-dark-grey;
   text-decoration: none;
+  vertical-align: center;
 }
 
 .rights__icon {
   width: 27px;
-  height: 34px;
+  height: 37px;
   display: block;
   background-color: $special_grey-2;
   mask-image: url("../../icons/stack.svg#html-icon");
@@ -27,5 +34,11 @@
   &:active,
   &:hover {
     background-color: $basic-green;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .rights {
+    width: 168px;
   }
 }

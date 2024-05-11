@@ -1,5 +1,6 @@
 .hero {
   margin: 0 auto;
+  padding: 0;
   font-family: $Oswald;
   color: #ffffff;
   background-image: url("../../images/cat-background-green-mobile@2x.jpg");
@@ -33,13 +34,14 @@
   .hero {
     color: #000000;
     background: none;
-    margin-bottom: 620px;
+    margin-bottom: 630px;
   }
 
   .hero__wrapper {
     position: relative;
     background: none;
     width: 708px;
+    padding-left: 90px;
   }
 
   .hero__info {
@@ -61,13 +63,13 @@
   .hero__image {
     position: absolute;
     top: 121px;
-    left: -40px;
+    left: 10px;
   }
 
   .hero__button {
     width: 245px;
     position: absolute;
-    top: 280px;
+    top: 295px;
   }
 }
 

@@ -1,17 +1,32 @@
 .main-footer {
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
   color: #000000;
-  width: 320px;
+  background-color: $basic-gray;
+}
+
+.main-footer__wrapper {
+  margin: 0 auto;
+  padding: 40px 0;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 @media (min-width: $tablet-width) {
-  .main-footer {
+  .main-footer__wrapper {
     width: $tablet-width;
+    padding: 30px 55px;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .main-footer {
-    width: $desktop-width;
+  .main-footer__wrapper {
+    width: 100%;
+    padding: 66px 110px;
   }
 }
