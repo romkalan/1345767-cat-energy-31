@@ -1,6 +1,9 @@
 .price {
+  margin: 0 auto;
+  width: 188px;
   display: flex;
   color: #000000;
+  justify-content: space-between;
 }
 
 .price__text {
@@ -17,4 +20,43 @@
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .price {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+
+  .price__text {
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  .price__numbers {
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price {
+    margin: 0;
+    min-width: 335px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .price__text {
+    text-align: center;
+  }
+
+  .price__numbers {
+    text-align: center;
+  }
 }

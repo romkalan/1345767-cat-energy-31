@@ -51,13 +51,13 @@
         <p class="hero__text">Занялся собой? Займись котом!</p>
       </div>
       <div class="hero__image">
-      <picture>
-        <source width="552" height="499" type="image/png" media="(min-width: 1440px)"
+        <picture>
+          <source width="552" height="499" type="image/png" media="(min-width: 1440px)"
                   srcset="images/can-desktop@1x.png 1x, images/can-desktop@2x.png 2x">
-        <source width="709" height="609" type="image/png" media="(min-width: 768px)"
+          <source width="709" height="609" type="image/png" media="(min-width: 768px)"
                   srcset="images/can-tablet-desktop@1x.png 1x, images/can-tablet-desktop@2x.png 2x">
-        <img class="hero__image" src="images/can-mobile@1x.png" srcset="images/can-mobile@2x.png 2x" width="280" height="270" alt="Пример банки корма Cat Energy">
-      </picture>
+          <img class="hero__image" src="images/can-mobile@1x.png" srcset="images/can-mobile@2x.png 2x" width="280" height="270" alt="Пример банки корма Cat Energy">
+        </picture>
       </div>
       <button class="hero__button button" type="button">Подобрать программу</button>
     </div>
@@ -125,50 +125,54 @@
   </section>
 
   <section class="example">
+    <h2 class="example__title">Живой пример</h2>
     <div class="example__wrapper">
-    <div class="example__description">
-      <h2 class="example__title">Живой пример</h2>
-      <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-        Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов
-        в день.</p>
-      <div class="example__numbers statistic">
-        <div class="statistic__weight">
-          <h3 class="statistic__title">5 КГ</h3>
-          <p class="statistic__text">снижение веса</p>
-        </div>
-        <div class="statistic__time">
-          <h3 class="statistic__title">60 ДНЕЙ</h3>
-          <p class="statistic__text">затрачено времени</p>
+      <div class="example__description">
+        <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+          Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
+          часов
+          в день.</p>
+        <div class="example__info">
+          <div class="example__numbers statistic">
+            <div class="statistic__weight">
+              <h3 class="statistic__title">5 КГ</h3>
+              <p class="statistic__text">снижение веса</p>
+            </div>
+            <div class="statistic__time">
+              <h3 class="statistic__title">60 ДНЕЙ</h3>
+              <p class="statistic__text">затрачено времени</p>
+            </div>
+          </div>
+          <div class="example__price price">
+            <p class="price__text">Затраты на питание:</p>
+            <p class="price__numbers">15 000 РУБ.</p>
+          </div>
         </div>
       </div>
-      <div class="example__price price">
-        <p class="price__text">Затраты на питание:</p>
-        <p class="price__numbers">15 000 РУБ.</p>
+      <div class="example__slider slider">
+        <picture>
+          <source media="(min-width: 768px)"
+                  srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x" type="image/png"
+                  width="560" height="512">
+          <img class="slider__image" src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png" width="280" height="256" alt="Толстый кот">
+        </picture>
+        <button class="slider__changer" type="button">
+          <span class="visually-hidden">Слайдер для отображения изменений массы кота</span>
+        </button>
+        <picture>
+          <source media="(min-width: 768px)"
+                  srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x"
+                  type="image/png" width="560" height="512">
+          <img class="slider__image" src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Худой кот">
+        </picture>
       </div>
-    </div>
-    <div class="example__slider slider">
-      <picture>
-        <source media="(min-width: 768px)"
-                srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x" type="image/png"
-                width="560" height="512">
-        <img class="slider__image" src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png" width="280" height="256" alt="Толстый кот">
-      </picture>
-      <button class="slider__changer" type="button">
-        <span class="visually-hidden">Слайдер для отображения изменений массы кота</span>
-      </button>
-      <picture>
-        <source media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x"
-                type="image/png" width="560" height="512">
-        <img class="slider__image" src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Худой кот">
-      </picture>
-    </div>
     </div>
   </section>
   <section class="contact">
     <h2 class="visually-hidden">Карта</h2>
     <div class="contact__wrapper">
       <div class="contact__info">
-        <p class="contact__title">приглашаем к сотрудничеству дилеров!</p>
+        <p class="contact__title">приглашаем <br>к сотрудничеству дилеров!</p>
         <p class="contact__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
       <iframe
@@ -184,37 +188,39 @@
   </section>
 </main>
 <footer class="main-footer">
-  <div class="main-footer__logo-wrapper logo">
-    <a class="logo__info" href="index.html">
-      <img class="logo__text" width="101" height="18" src="images/cat-energy-text-logo.svg" alt="cat energy text">
-    </a>
-  </div>
-  <div class="socials">
-    <ul class="socials__list">
-      <li class="socials__item vk-logo">
-        <a class="socials__icon socials__icon--vkontakte" href="#">
-          <span class="visually-hidden">Вконтакте</span>
-        </a>
-      </li>
-      <li class="socials__item youtube-logo">
-        <a class="socials__icon socials__icon--youtube" href="#">
-          <span class="visually-hidden">Ютьюб</span>
-        </a>
-      </li>
-      <li class="socials__item tg-logo">
-        <a class="socials__icon socials__icon--telegram" href="#">
-          <span class="visually-hidden">Телеграм</span>
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div class="rights">
-    <a class="rights__link" href="#">
-      <p class="rights__text">HTML Academy</p>
-    </a>
-    <a class="rights__icon" href="#">
-      <span class="visually-hidden">HTML Academy логотип</span>
-    </a>
+  <div class="main-footer__wrapper">
+    <div class="main-footer__logo-wrapper logo">
+      <a class="logo__info" href="index.html">
+        <img class="logo__text" width="128" height="24" src="images/cat-energy-text-logo.svg" alt="cat energy text">
+      </a>
+    </div>
+    <div class="socials">
+      <ul class="socials__list">
+        <li class="socials__item vk-logo">
+          <a class="socials__icon socials__icon--vkontakte" href="#">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li class="socials__item youtube-logo">
+          <a class="socials__icon socials__icon--youtube" href="#">
+            <span class="visually-hidden">Ютьюб</span>
+          </a>
+        </li>
+        <li class="socials__item tg-logo">
+          <a class="socials__icon socials__icon--telegram" href="#">
+            <span class="visually-hidden">Телеграм</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="rights">
+      <a class="rights__link" href="#">
+        <p class="rights__text">HTML Academy</p>
+      </a>
+      <a class="rights__icon" href="#">
+        <span class="visually-hidden">HTML Academy логотип</span>
+      </a>
+    </div>
   </div>
 </footer>
 </body>
