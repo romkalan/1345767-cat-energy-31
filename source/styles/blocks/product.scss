@@ -10,7 +10,6 @@
 
 .product__info {
   width: 140px;
-  border: 1px solid #663399;
 }
 
 .product__title {
@@ -28,6 +27,7 @@
   .product {
     margin: 0 auto;
     width: 250px;
+    gap: 0;
   }
 
   .product__image {
