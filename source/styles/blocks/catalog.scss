@@ -3,8 +3,10 @@
 }
 
 .catalog__wrapper {
-  margin: 0 auto;
+  margin: 0 auto 25px;
+  padding-bottom: 25px;
   width: 280px;
+  border-bottom: 1px solid $special_grey;
 }
 
 .catalog__title {
@@ -43,6 +45,11 @@
     border: none;
   }
 
+  .catalog__item--empty {
+    background-color: #ffffff;
+    border: 2px solid $basic-gray;
+  }
+
   .catalog__title {
     font-size: 60px;
     line-height: 60px;
@@ -53,6 +60,7 @@
   .catalog__wrapper {
     margin: 0 auto;
     width: 708px;
+    border: none;
   }
 
   .catalog__list {
