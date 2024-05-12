@@ -23,7 +23,7 @@
   text-align: left;
 }
 
-.product--empty {
+.product-empty {
   display: flex;
   flex-direction: column;
   gap: 0;
@@ -44,7 +44,7 @@
   margin: 0 0 21px;
 }
 
-.product--empty__order {
+.product-empty__order {
   margin: 0;
   background-color: $basic-gray;
   color: $special_dark-grey;
@@ -79,7 +79,7 @@
     line-height: 24px;
   }
 
-  .product--empty {
+  .product-empty {
     background-color: #ffffff;
   }
 
@@ -103,7 +103,7 @@
     margin: 0 0 42px;
   }
 
-  .product--empty__order {
+  .product-empty__order {
     margin: 0;
     background-color: $basic-gray;
     color: $special_dark-grey;
@@ -133,7 +133,7 @@
     margin: 0 0 42px;
   }
 
-  .product--empty__order {
+  .product-empty__order {
     margin: 0;
     background-color: $basic-gray;
     color: $special_dark-grey;
