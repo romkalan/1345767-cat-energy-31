@@ -1,5 +1,7 @@
 .slider {
+  margin: 0 auto;
   color: #000000;
+  width: 280px;
 }
 
 .slider__changer {
@@ -37,5 +39,11 @@
     background-color: $special_grey-2;
     mask-repeat: no-repeat;
     mask-image: url("../../icons/stack.svg#thumb-slider");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .slider {
+    width: 708px;
   }
 }
