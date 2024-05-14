@@ -5,21 +5,30 @@
   width: 320px;
   padding: 13px 20px;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  align-items: left;
+  gap: 37px;
+  position: relative;
 }
 
 .main-header__toggle {
+  position: absolute;
+  right: 20px;
+  top: 21px;
   width: 24px;
   height: 24px;
   mask-repeat: no-repeat;
   mask-image: url("../../icons/stack.svg#burger-icon");
   background-color: #000000;
+}
 
-  &:active {
-    mask-image: url("../../icons/stack.svg#close-icon");
-  }
+.main-header--opened .main-header__toggle {
+  width: 24px;
+  height: 24px;
+  mask-repeat: no-repeat;
+  mask-image: url("../../icons/stack.svg#close-icon");
+  background-color: #000000;
 }
 
 .main-header__toggle:hover {
@@ -28,6 +37,9 @@
 
 @media (min-width: $tablet-width) {
   .main-header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     width: $tablet-width;
   }
 
