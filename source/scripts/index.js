@@ -1,9 +1,9 @@
 /* в этот файл добавляет скрипты*/
-let mainHeader = document.querySelector('.main-header');
-let mainNavList = document.querySelector('.main-navigation__list');
-let mainHeaderToggle = document.querySelector('.main-header__toggle');
+const mainHeader = document.querySelector('.main-header');
+const mainNavList = document.querySelector('.main-navigation__list');
+const mainHeaderToggle = document.querySelector('.main-header__toggle');
 
-mainHeaderToggle.addEventListener('click', function () {
+mainHeaderToggle.addEventListener('click', () => {
   if (mainNavList.classList.contains('site-list--opened')) {
     mainNavList.classList.remove('site-list--opened');
     mainNavList.classList.add('site-list');

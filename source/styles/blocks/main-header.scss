@@ -5,8 +5,7 @@
   width: 320px;
   padding: 13px 20px;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
   align-items: left;
   gap: 37px;
   position: relative;
