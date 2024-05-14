@@ -4,7 +4,6 @@
 
 .logo__link {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -14,7 +13,7 @@
 }
 
 .logo__image {
-  margin-right: 56px;
+  margin-right: 60px;
 }
 
 .logo__text {
@@ -28,5 +27,11 @@
 @media (min-width: $tablet-width) {
   .logo__image {
     margin-right: 13px;
+  }
+
+  .logo__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
