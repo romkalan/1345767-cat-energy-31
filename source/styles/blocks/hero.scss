@@ -6,6 +6,33 @@
   background-image: url("../../images/cat-background-green-mobile@2x.jpg");
   background-repeat: no-repeat;
   background-size: contain;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 820px;
+    height: 964px;
+    position: absolute;
+    background-image: url("../../images/background-cat-desktop@2x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    z-index: -1;
+    right: -520;
+    transform: translate(-50%, -50%);
+  }
+
+  &::after {
+    content: "";
+    width: 820px;
+    height: 964px;
+    position: absolute;
+    background-color: rgba(94, 170, 47, 0.85);
+    top: 0;
+    z-index: -1;
+    right: -520;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .hero__wrapper {

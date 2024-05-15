@@ -1,10 +1,31 @@
 .button {
   font-family: $Oswald;
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 16px;
+  line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
   background-color: $basic-green;
   color: #ffffff;
   border-style: none;
+  width: 280px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    width: 250px;
+  }
+}
+
+.button:hover,
+.button:active,
+.button:focus {
+  background-color: $basic_green-2;
+}
+
+.button:active {
+  background-color: $basic_green-2;
+  color: rgba(255, 255, 255, 0.5);
 }

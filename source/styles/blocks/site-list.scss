@@ -28,12 +28,28 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 20px;
+  position: relative;
+}
+
+.site-list__item-active::after {
+  content: "";
+  position: absolute;
+  background-color: $basic-green;
+  height: 2px;
+  right: 1px;
+  left: 1px;
+  bottom: -15px;
 }
 
 .site-list__item a {
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
+  transition: color 250ms ease-in-out;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .site-list--opened .site-list__item {
@@ -49,4 +65,18 @@
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__item-white-active::after {
+    background-color: #ffffff;
+  }
+
+  .site-list__item-white a {
+    color: #ffffff;
+
+    &:hover {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
 }
