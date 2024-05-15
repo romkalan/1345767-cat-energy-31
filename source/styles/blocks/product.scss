@@ -26,7 +26,22 @@
 .product-empty {
   display: flex;
   flex-direction: column;
-  gap: 0;
+  gap: 20px;
+}
+
+.product-empty__image {
+  width: 2px;
+  height: 30px;
+  background-color: #d3d3d3;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 30px;
+    background-color: #d3d3d3;
+    transform: rotate(90deg);
+  }
 }
 
 .product-empty__info {
@@ -44,7 +59,7 @@
   margin: 0 0 21px;
 }
 
-.product-empty__order {
+.product-empty-order {
   margin: 0;
   background-color: $basic-gray;
   color: $special_dark-grey;
@@ -84,6 +99,21 @@
     width: auto;
   }
 
+  .product-empty__image {
+    width: 2px;
+    height: 60px;
+    background-color: #d3d3d3;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 2px;
+      height: 60px;
+      background-color: #d3d3d3;
+      transform: rotate(90deg);
+    }
+  }
+
   .product-empty__info {
     margin: 0 auto;
     padding-top: 25px;
@@ -93,7 +123,7 @@
   .product-empty__title {
     font-size: 20px;
     line-height: 24px;
-    margin: 0 0 23px;
+    margin: 0 0 25px;
     text-align: center;
   }
 
@@ -101,14 +131,31 @@
     font-size: 16px;
     line-height: 18px;
     color: #444444;
-    margin: 0 0 42px;
+    margin: 0 0 85px;
   }
 
-  .product-empty__order {
+  .product-order {
+    margin-bottom: 40px;
+  }
+
+  .product-empty-order {
     margin: 0;
+    padding: 10px;
     background-color: $basic-gray;
     color: $special_dark-grey;
-    width: 169px;
+    width: 250px;
+    transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $basic-grey-2;
+    }
+
+    &:active {
+      color: $special_dark-grey;
+      background-color: $basic-grey-2;
+    }
   }
 }
 
@@ -122,19 +169,23 @@
     margin: 150px 0 40px;
   }
 
+  .product-order {
+    width: 169px;
+  }
+
   .product-empty__info {
     padding-top: 60px;
   }
 
   .product-empty__title {
-    margin: 0 0 23px;
+    margin: 0 0 25px;
   }
 
   .product-empty__text {
-    margin: 0 0 42px;
+    margin: 0 0 80px;
   }
 
-  .product-empty__order {
+  .product-empty-order {
     margin: 0;
     background-color: $basic-gray;
     color: $special_dark-grey;

@@ -73,18 +73,22 @@
   height: 290px;
   display: flex;
   text-align: center;
+  justify-content: space-between;
 }
 
 .additional-goods__order-all-text {
   color: #ffffff;
   background-color: rgba(104, 183, 56, 0.85);
-  margin: 0;
+  margin: 0 auto;
+  padding: 60px;
 
   &::before {
     content: "";
     display: block;
     width: 78px;
     height: 80px;
+    margin-bottom: 50px;
+    transform: translate(50%, -25%);
     background-image: url("../../icons/stack.svg#gift-icon");
   }
 }
@@ -158,7 +162,20 @@
   .additional-goods__order-all-text {
     width: 708px;
     color: #ffffff;
+    font-size: 16px;
+    line-height: 20px;
     margin: 0;
+    padding: 80px 0 0 150px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 10px;
+      left: 50px;
+      transform: translate(50%, 50%);
+    }
   }
 }
 
@@ -188,10 +205,12 @@
   .additional-goods__list {
     border-bottom: 1px solid $basic-gray;
     width: 900px;
+    justify-content: space-between;
+    padding-bottom: 10px;
   }
 
   .additional-goods__item {
-    padding: 0;
+    padding: 10px 0;
     border: none;
     width: 896px;
     border-top: 1px solid $basic-gray;
@@ -205,10 +224,6 @@
     padding: 15px 0;
   }
 
-  .additional-goods__order {
-    height: 40px;
-  }
-
   .additional-goods__order-all-wrapper {
     background-image: url("../../images/cat-in-box-mobile@2x.webp");
     width: 245px;
@@ -218,9 +233,18 @@
   }
 
   .additional-goods__order-all-text {
-    width: 245px;
-    padding: 50px;
     color: #ffffff;
+    padding: 200px 40px 0;
     margin: 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 50px;
+      left: 40px;
+      transform: translate(50%, 50%);
+    }
   }
 }

@@ -49,13 +49,18 @@
   width: 60px;
   height: 60px;
   background-color: $basic-green;
+  display: flex;
+  flex: none;
+  position: relative;
 
   &::after {
     content: "";
     width: 25px;
     height: 28px;
     position: absolute;
-    mask-position: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     mask-repeat: no-repeat;
     background-color: #ffffff;
   }
@@ -95,6 +100,45 @@
     gap: 31px;
     width: 230px;
     flex-direction: column;
+    position: relative;
+
+    &::after {
+      content: "";
+      font-family: $Oswald;
+      font-size: 250px;
+      line-height: 280px;
+      position: absolute;
+      color: $basic-gray;
+      top: 40%;
+      right: -15%;
+      z-index: -1;
+      transform: translate(-50%, -50%);
+      mask-repeat: no-repeat;
+    }
+  }
+
+  .how-it-works__item-1 {
+    &::after {
+      content: "1";
+    }
+  }
+
+  .how-it-works__item-2 {
+    &::after {
+      content: "2";
+    }
+  }
+
+  .how-it-works__item-3 {
+    &::after {
+      content: "3";
+    }
+  }
+
+  .how-it-works__item-4 {
+    &::after {
+      content: "4";
+    }
   }
 
   .how-it-works__title {
