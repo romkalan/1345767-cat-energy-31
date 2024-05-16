@@ -23,9 +23,19 @@
 }
 
 .subscribe__label input {
+  font-family: $Oswald;
+  font-size: 20px;
+  line-height: auto;
+  color: $special-dark-grey;
   width: 280px;
   height: 56px;
-  font-size: 20px;
+  padding: 13px;
+  text-transform: uppercase;
+  border: 1px solid #e7e7e7;
+
+  &:focus {
+    border-color: $special-dark-grey;
+  }
 }
 
 @media (min-width: $tablet-width) {
