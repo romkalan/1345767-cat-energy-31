@@ -6,33 +6,31 @@
   background-image: url("../../images/cat-background-green-mobile@2x.jpg");
   background-repeat: no-repeat;
   background-size: contain;
-  position: relative;
+  //position: relative;
 
   @media (min-width: $desktop-width) {
     &::before {
       content: "";
-      width: 820px;
-      height: 964px;
+      width: 50%;
+      height: 694px;
       position: absolute;
       background-image: url("../../images/background-cat-desktop@2x.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       top: 0;
       z-index: -1;
-      right: -520;
-      transform: translate(-50%, -50%);
+      right: 0;
     }
 
     &::after {
       content: "";
-      width: 820px;
-      height: 964px;
+      width: 50%;
+      height: 694px;
       position: absolute;
       background-color: rgba(94, 170, 47, 0.85);
       top: 0;
       z-index: -1;
-      right: -520;
-      transform: translate(-50%, -50%);
+      right: 0;
     }
   }
 }
@@ -104,7 +102,7 @@
 
 @media (min-width: $desktop-width) {
   .hero {
-    margin-bottom: 266px;
+    margin-bottom: 320px;
   }
 
   .hero__wrapper {
@@ -114,6 +112,6 @@
   .hero__image {
     position: absolute;
     top: 0;
-    left: 200px;
+    left: 230px;
   }
 }

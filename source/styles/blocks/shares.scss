@@ -3,19 +3,33 @@
 }
 
 .shares__title {
-  margin: 0 auto 32px;
-  width: 280px;
+  margin-bottom: 36px;
+  width: fit-content;
   font-family: $Oswald;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+  background-color: #ffffff;
+  box-shadow: 30px 0 0 0 #ffffff, -30px 0 0 0 #ffffff;
+  position: relative;
+
+  &::before {
+    content: "";
+    height: 2px;
+    position: absolute;
+    width: 100vw;
+    background: $basic-green;
+    top: 50%;
+    right: 0;
+    box-shadow: 100vw 0 0 0 $basic-green;
+    z-index: -1;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .shares__title {
     font-size: 32px;
     line-height: 32px;
-    width: 632px;
   }
 }
 
@@ -24,6 +38,5 @@
     font-size: 40px;
     line-height: 40px;
     margin-bottom: 72px;
-    width: 1220px;
   }
 }
