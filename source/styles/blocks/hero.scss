@@ -1,5 +1,5 @@
 .hero {
-  margin: 0 auto;
+  //margin: 0 auto;
   padding: 0;
   font-family: $Oswald;
   color: #ffffff;
@@ -36,6 +36,7 @@
 }
 
 .hero__wrapper {
+  margin: 0 auto;
   padding: 0;
   width: 280px;
   display: flex;
