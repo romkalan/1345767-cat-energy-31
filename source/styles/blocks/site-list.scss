@@ -18,6 +18,11 @@
   border-bottom: 1px solid $special_grey;
 }
 
+.main-header--nojs .site-list--opened {
+  position: static;
+  padding-top: 0;
+}
+
 .site-list__item {
   font-family: $Oswald;
   font-size: 20px;
