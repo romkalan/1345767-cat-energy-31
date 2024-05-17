@@ -11,6 +11,10 @@
   position: relative;
 }
 
+.main-header--nojs .main-header__toggle {
+  display: none;
+}
+
 .main-header__toggle {
   position: absolute;
   right: 20px;

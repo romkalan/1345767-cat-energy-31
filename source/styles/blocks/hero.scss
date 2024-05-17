@@ -1,12 +1,10 @@
 .hero {
-  //margin: 0 auto;
   padding: 0;
   font-family: $Oswald;
   color: #ffffff;
   background-image: url("../../images/cat-background-green-mobile@2x.jpg");
   background-repeat: no-repeat;
   background-size: contain;
-  //position: relative;
 
   @media (min-width: $desktop-width) {
     &::before {
