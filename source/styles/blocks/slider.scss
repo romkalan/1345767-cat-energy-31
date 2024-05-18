@@ -4,11 +4,15 @@
   width: 280px;
 }
 
+.slider__image {
+  position: absolute;
+}
+
 .slider__changer {
   margin: 0;
   padding: 0;
   width: 4px;
-  height: 258px;
+  height: 256px;
   border-radius: 2px;
   background-color: $special_grey-2;
   cursor: pointer;
@@ -19,12 +23,13 @@
     position: absolute;
     width: 40px;
     height: 40px;
-    top: 45%;
-    left: -22px;
     background-color: #ffffff;
     border-radius: 50%;
     border: 2px solid $special_grey-2;
     cursor: pointer;
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+    transform: translate(-50% -50%);
   }
 
   &::after {
@@ -33,17 +38,22 @@
     position: absolute;
     width: 24px;
     height: 24px;
-    top: 49%;
-    left: -12px;
     display: block;
     background-color: $special_grey-2;
     mask-repeat: no-repeat;
     mask-image: url("../../icons/stack.svg#thumb-slider");
+    top: calc(50% - 12px);
+    left: calc(50% - 12px);
+    transform: translate(-50% -50%);
   }
 }
 
 @media (min-width: $tablet-width) {
   .slider {
     width: 708px;
+  }
+
+  .slider__changer {
+    height: 512px;
   }
 }
