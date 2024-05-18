@@ -6,6 +6,11 @@
   background-repeat: no-repeat;
   background-size: contain;
 
+  @media (min-width: 475px) {
+    background-position: center;
+    background-size: cover;
+  }
+
   @media (min-width: $desktop-width) {
     &::before {
       content: "";
@@ -54,6 +59,15 @@
   line-height: 14px;
   text-transform: uppercase;
   text-align: center;
+}
+
+.hero__button {
+  @media (min-width: 475px) and (max-width: $tablet-width - 1px) {
+    background-color: #ffffff;
+    color: $basic-green;
+    border: 1px solid $basic_green-2;
+    margin-bottom: 20px;
+  }
 }
 
 @media (min-width: $tablet-width) {
